@@ -117,3 +117,71 @@ table th, table td {
       display: flex;
       justify-content: center;
   }
+
+    body {
+            background-image: linear-gradient(to bottom, black ,black, black);
+        }
+        nav{
+            margin-bottom: 50px;
+        }
+
+
+        /*carousel stuff*/
+
+
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slides {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+.slide  {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  border-radius: 10px;
+
+}
+
+
+.slide.active {
+  opacity: 1;
+}
+
+button.prev,
+button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+button.prev {
+  left: 10px;
+}
+
+button.next {
+  right: 10px;
+}
+
+button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/*------------------------------------------------------------*/
